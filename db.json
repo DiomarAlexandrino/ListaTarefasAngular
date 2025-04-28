@@ -1,15 +1,15 @@
 {
   "tasks": [
     {
-      "id": "1",
-      "tarefa": "Estudar C#",
-      "categoria": "Faculdade",
+      "id": "2",
+      "tarefa": "Estudar Angular1",
+      "categoria": "TRABALHO",
       "concluido": false
     },
     {
-      "id": "2",
-      "tarefa": "Estudar Angular",
-      "categoria": "Trabalho",
+      "id": "052b",
+      "tarefa": "ggg",
+      "categoria": "FACULDADE",
       "concluido": false
     }
   ]

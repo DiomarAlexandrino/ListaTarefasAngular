@@ -12,6 +12,9 @@ import { ButtonComponent } from '../button/button.component';
   styleUrl: './add-task.component.css'
 })
 export class AddTaskComponent {
+
+
+
 @Output() onAddTask = new EventEmitter<Tarefa>();
 
   tarefa: string = '';
@@ -22,6 +25,7 @@ export class AddTaskComponent {
 AlteraVisualizacao(valor : boolean) {
   this.mostrarAddTarefa = valor;
 }
+
 
   onSubmit() {
     if(!this.tarefa) {

@@ -1,6 +1,10 @@
 <app-add-task (onAddTask)="addTask($event)"></app-add-task>
+<app-edit-task (onEditTask)="editTask(tarefa)"  
+(click)="AlteraVisualizacao1(true)"   ></app-edit-task>
 <app-task-item *ngFor="let tarefa of tarefas"
  [tarefa]="tarefa" 
  (onDeleteTask)="deleteTask($event)"
  (onToggleConcluido)="toggleConcluido($event)"
+ (click)="onClick(tarefa)"
+
  ></app-task-item>

@@ -8,6 +8,8 @@
 <form (ngSubmit)="onSubmit()"  *ngIf="mostrarAddTarefa" class="add-form">
     <div>
         <label for="text">Tarefa</label>
+        
+       
         <input type="text"
         name="text"
         class="form-control"
@@ -15,6 +17,7 @@
         id="text"
         [(ngModel)]="tarefa"
         >
+        
     </div>
 
    

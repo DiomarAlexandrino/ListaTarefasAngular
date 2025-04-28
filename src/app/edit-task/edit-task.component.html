@@ -1,0 +1,49 @@
+
+
+<form (ngSubmit)="onSubmit()"  *ngIf="mostrarEditTarefa" class="edit-form">
+    <div class="mb-4">
+        <label for="text">Código</label>
+        <input type="text"
+        name="text"
+        class="form-control"
+        placeholder="Editar Tarefa"
+        id="text"
+        [(ngModel)]="tarefa.id"
+        >  
+    </div>
+    <div class="mb-4">
+
+        <label for="text">Tarefa</label>
+        <input type="text"
+        name="text1"
+        class="form-control"
+        placeholder="Editar Tarefa"
+        id="text1"
+        [(ngModel)]="tarefa.tarefa"
+        >  
+    </div>
+
+    <div class="mb-4">
+        <label for="categoria">Categoria:</label>
+        {{tarefa.categoria.toUpperCase()}}
+
+        <select name="categoria" id="categoria" class="form-select"   [(ngModel)]="tarefa.categoria">
+
+          
+             
+           <option *ngFor="let item of items; index as i"      
+                [value]="item"
+                [ngStyle]="{'color': 'blue'}"
+
+                [ngSwitch]="item"
+                text.defaultSelected = (tarefa.categoria)
+
+                 >{{item}}</option>
+                
+        
+        </select>
+    </div>
+    
+    <input type="submit" value="Salvar Tarefa" class="btn btn-block mb-4" >
+    </form>
+

@@ -1,17 +1,36 @@
+
+
+<app-edit-task [mostrarEditTarefa]="mostrarEditTarefa"  [tarefa]="tarefa"></app-edit-task>
+
+
+
 <div class="task"
     (dblclick)="onToggle(tarefa)"
     [ngClass]= "{reminder: tarefa.concluido}"
 >
-   <h3>{{tarefa.tarefa}}
-       <fa-icon 
-       [icon]="faTimes" 
-       [ngStyle]="{'color': 'red'}"
-        (click)="onDelete(tarefa)" 
-
-        >
-    </fa-icon>
-   </h3>
-   <p>{{tarefa.categoria}}
+ 
+   <h3 >{{tarefa.tarefa}}
+    <div>
+       <button 
+               class="btn btn-primary"
+               [ngStyle]="{'color': 'blue',  align: 'right'}"
+               (click)="AlteraVisualizacao1(true)"
+               (click)="onEdit(tarefa)"
+              
+                >Editar
+       </button>
+     
+       <button 
+         class="btn btn-primary" 
+            [ngStyle]="{'color': 'red', align: 'right'}"
+           (click)="onDelete(tarefa)" 
+      >Excluir
+      </button>
+    </div>
+      </h3>
+    
+   <div>
+    <p>{{tarefa.categoria}}
        
-   </p>
+    </p>
 </div>
