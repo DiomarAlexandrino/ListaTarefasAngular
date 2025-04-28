@@ -44,7 +44,7 @@ this.taskService.getTasks().subscribe((dado) => {
   this.tarefas = dado.filter((tarefa) => {  
     // Verifica se a tarefa contém o texto da pesquisa
     if (this.filtroStatus === 'todas') {     
-      tarefa.tarefa.toLowerCase().includes(this.pesquisa.toLowerCase()) 
+      return(tarefa.tarefa.toLowerCase().includes(this.pesquisa.toLowerCase()) );
     } else if (this.filtroStatus === 'concluidas') {
       return((tarefa.tarefa.toLowerCase().includes(this.pesquisa.toLowerCase()) && tarefa.concluido  ===  true ) );
     } else if (this.filtroStatus === 'pendentes') {
