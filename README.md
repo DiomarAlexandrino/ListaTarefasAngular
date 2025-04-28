@@ -6,6 +6,7 @@ Projeto desenvolvido para treinar habilidade, com a criação de um controle de 
 
 #Objetivo
 Introduzir meus conhecimentos em Angular
+Onde aprendi a incluir , editar e excluir uma tarefa , treinando habilidades de compartilhameno de dados entre telas e uso da componentização do angular
 
 #Ferramentas
 
