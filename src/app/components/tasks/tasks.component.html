@@ -1,4 +1,26 @@
-<app-add-task (onAddTask)="addTask($event)"></app-add-task>
+ 
+ <div>
+    <app-add-task (onAddTask)="addTask($event)"></app-add-task>
+</div>
+ 
+<div>
+    <label for="filtro" class="mb-4 px-3" ><h2> Status </h2></label>
+    <select class="mb-3 px-3"  name="selectStatus" id="selectStatus" class="form-select" [(ngModel)]="filtroStatus" (ngModelChange)="filtrarStatus()"
+    (change)="filtrarTarefas()">
+       
+        <option value="todas">Todas</option>
+        <option value="concluidas">Concluídas</option>  
+        <option value="pendentes">Pendentes</option>
+    </select>
+</div>
+
+ <div>
+    <label for="pesquisar" class="mb-4 px-3" ><h2> Pesquisar  </h2></label>
+    <input type="text" [(ngModel)]="pesquisa"   (keypress)="filtrarTarefas()"  (ngModelChange)="filtrarTarefas()" placeholder="Digite o nome|Categoria da tarefa" />
+
+</div>
+
+
 <app-edit-task (onEditTask)="editTask(tarefa)"  
 (click)="AlteraVisualizacao1(true)"   ></app-edit-task>
 <app-task-item *ngFor="let tarefa of tarefas"

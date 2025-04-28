@@ -26,8 +26,9 @@ item: any;
 
 
   onSubmit() {
-    if(!this.tarefa) {
-      alert('edite uma tarefa!')
+    if(this.tarefa.tarefa == null || this.tarefa.tarefa == '') {
+      alert('campo tarefa não pode ser vazio!')
+      return;
       }
 
     this.taskService.updateTask(this.tarefa).subscribe((tarefa) => {

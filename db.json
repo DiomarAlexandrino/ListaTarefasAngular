@@ -2,13 +2,13 @@
   "tasks": [
     {
       "id": "2",
-      "tarefa": "Estudar Angular1",
+      "tarefa": "Estuda Angular",
       "categoria": "TRABALHO",
       "concluido": false
     },
     {
       "id": "052b",
-      "tarefa": "ggg",
+      "tarefa": "TCC",
       "categoria": "FACULDADE",
       "concluido": false
     }
