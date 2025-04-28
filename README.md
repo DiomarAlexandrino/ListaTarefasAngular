@@ -6,6 +6,7 @@ Projeto desenvolvido para treinar habilidade, com a criação de um controle de 
 
 #Objetivo
 Introduzir meus conhecimentos em Angular
+Onde aprendi a incluir , editar e excluir uma tarefa , treinando habilidades de compartilhameno de dados entre telas e uso da componentização do angular
 
 #Ferramentas
 
@@ -14,7 +15,11 @@ Introduzir meus conhecimentos em Angular
 
 #Link do projeto
 
-https://app.netlify.com/sites/listadetarefas2024/
+[https://app.netlify.com/sites/listadetarefas2024/](https://listadetarefas2024.netlify.app/)
+
+
+![image](https://github.com/user-attachments/assets/230a58f5-d956-44c9-9219-a396ce59277e)
+
 
 
 
