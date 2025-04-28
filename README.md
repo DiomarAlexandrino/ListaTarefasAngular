@@ -14,7 +14,7 @@ Introduzir meus conhecimentos em Angular
 
 #Link do projeto
 
-https://app.netlify.com/sites/listadetarefas2024/
+[https://app.netlify.com/sites/listadetarefas2024/](https://listadetarefas2024.netlify.app/)
 
 
 
